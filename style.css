@@ -1,5 +1,3 @@
-/* style.css - Dark, classified theme */
-
 body {
     font-family: 'Courier New', monospace;
     background-color: #121212;
@@ -47,4 +45,9 @@ footer {
 .redacted {
     background-color: #ff0000;
     color: #ff0000;
+}
+
+.veilfall {
+    color: #ff00ff;
+    font-weight: bold;
 }
