@@ -1,5 +1,5 @@
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Calibri', monospace;
     background-color: #121212;
     color: #d4d4d4;
     text-align: center;
@@ -33,6 +33,24 @@ ul li {
 
 ul li:hover {
     background-color: #ff0000;
+}
+
+a:link {
+    color = #ff0000;
+    text-decoration: none;
+}
+
+a:visited {
+    color = #ff0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 footer {
