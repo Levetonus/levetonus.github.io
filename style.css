@@ -24,12 +24,12 @@ main {
     margin: 30px;
 }
 
-ul {
+.ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li {
+.ul_li {
     background-color: #222;
     margin: 10px;
     padding: 15px;
@@ -37,7 +37,7 @@ ul li {
     transition: 0.3s;
 }
 
-ul li:hover {
+.ul_li:hover {
     background-color: #ff0000;
 }
 
@@ -64,16 +64,27 @@ footer {
     color: #ff0000;
 }
 
-.veilfall, .command {
+.command, .veilfall, .aggregate {
     color: #ff00ff;
     font-weight: bold;
 }
 
-.love {
-    color: #0000f0;
+.love, .colorful {
+    color: #00c0ff;
     font-weight: bold;
 }
 
-#files-list, .center {
+.ethics, .survival, .trailblazer {
+    color: #ffac1c;
+    font-weight: bold;
+}
+
+.security, .stability {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+#files-list {
     text-align: center;
 }
