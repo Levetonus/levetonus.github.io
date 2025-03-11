@@ -15,7 +15,7 @@ header {
 }
 
 main {
-    margin: 20px;
+    margin: 30px;
 }
 
 ul {
@@ -36,12 +36,12 @@ ul li:hover {
 }
 
 a:link {
-    color = red;
+    color = #ff0000;
     text-decoration: none;
 }
 
 a:visited {
-    color = red;
+    color = #ff0000;
     text-decoration: none;
 }
 
@@ -51,10 +51,6 @@ a:hover {
 
 a:active {
     text-decoration: underline;
-}
-
-table {
-    text-align: center;
 }
 
 footer {
@@ -72,4 +68,8 @@ footer {
 .veilfall {
     color: #ff00ff;
     font-weight: bold;
+}
+
+.leftAlign {
+    text-align: left;
 }
