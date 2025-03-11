@@ -2,7 +2,6 @@ body {
     font-family: 'Inter', monospace;
     background-color: #121212;
     color: #d4d4d4;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -12,6 +11,13 @@ header {
     color: white;
     padding: 20px;
     text-transform: uppercase;
+    text-align: center;
+}
+
+section {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0.5px;
 }
 
 main {
@@ -35,21 +41,13 @@ ul li:hover {
     background-color: #ff0000;
 }
 
-a:link {
-    color = #ff0000;
+a:link, a:visited {
+    color: #d4d4d4;
     text-decoration: none;
 }
 
-a:visited {
-    color = #ff0000;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
+a:hover, a:active {
+    color: #d4d4d4;
     text-decoration: underline;
 }
 
@@ -58,6 +56,7 @@ footer {
     padding: 10px;
     font-size: 12px;
     margin-top: 30px;
+    text-align: center;
 }
 
 .redacted {
@@ -65,11 +64,16 @@ footer {
     color: #ff0000;
 }
 
-.veilfall {
+.veilfall, .command {
     color: #ff00ff;
     font-weight: bold;
 }
 
-.leftAlign {
-    text-align: left;
+.love {
+    color: #0000f0;
+    font-weight: bold;
+}
+
+#files-list, .center {
+    text-align: center;
 }
