@@ -35,21 +35,13 @@ ul li:hover {
     background-color: #ff0000;
 }
 
-a:link {
-    color = #ff0000;
+a:link, a:visited {
+    color: #d4d4d4;
     text-decoration: none;
 }
 
-a:visited {
-    color = #ff0000;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
+a:hover, a:active {
+    color: #d4d4d4;
     text-decoration: underline;
 }
 
