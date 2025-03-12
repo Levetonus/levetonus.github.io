@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
             this.style.color = "#ff0000";
         });
         text.addEventListener("mouseout", function() {
-            this.style.backgroundColor = "#ff0000";
-            this.style.color = "#ff0000";
+            this.style.backgroundColor = "#000000";
+            this.style.color = "#000000";
         });
     });
 });
