@@ -1,7 +1,7 @@
 // script.js - Adds interactive effects
 
 document.addEventListener("DOMContentLoaded", function() {
-    let redactedTexts = document.querySelectorAll(".redacted");
+    let redactedTexts = document.querySelectorAll(".redacted2");
     
     redactedTexts.forEach(text => {
         text.addEventListener("mouseover", function() {

@@ -15,13 +15,17 @@ header {
 }
 
 section {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     padding: 0.5px;
 }
 
 main {
     margin: 30px;
+}
+
+ul li {
+    padding: 2.5px;
 }
 
 .ul {
@@ -60,26 +64,31 @@ footer {
 }
 
 .redacted {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.redacted2 {
     background-color: #000000;
     color: #000000;
 }
 
-.command, .veilfall, .aggregate {
+.command {
     color: #ff00ff;
     font-weight: bold;
 }
 
-.love, .colorful {
+.love {
     color: #00c0ff;
     font-weight: bold;
 }
 
-.ethics, .survival, .trailblazer {
+.ethics {
     color: #ffac1c;
     font-weight: bold;
 }
 
-.security, .stability {
+.security {
     background-color: white;
     color: black;
     font-weight: bold;
