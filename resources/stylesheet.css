@@ -1,0 +1,286 @@
+
+/*
+  https://www.w3schools.com/css/css3_variables.asp
+  Variables must have -- at the beginning.
+  Global variables are declared in :root, the root element.
+  var() is used to insert the value of a declared variable.
+*/
+:root{
+  --white: #FFFFFF;
+  --offwhite: #F5F5F5;
+  --silver: #BDC3C7;
+  --gray: #95A5A6;
+  --purple: #7D3C98;
+
+  --bg: var(--white);
+  --surface: var(--offwhite);
+  --text: #111111;
+  --muted: #444444;
+  --border: var(--silver);
+  --brand: var(--purple);
+  --brand-contrast: var(--white);
+}
+
+/*
+  https://www.w3schools.com/cssref/sel_all.php
+  An asterisk is a universal selector; it selects everything.
+
+  https://www.w3schools.com/cssref/css_ref_pseudo_elements.php
+  ::before and ::after are pseudo-elements; declarations inside them modify
+    something before and after an element.
+
+  https://www.w3schools.com/css/css3_box-sizing.asp
+  box-sizing: border-box allows padding and border to be included in an element's
+    total width and height.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+
+  /*
+    https://css-tricks.com/snippets/css/system-font-stack/
+    system-ui is a generic font-family for whatever a user's operating system sets.
+    -apple-system is presumably the generic font-family for a website loaded on an Apple device.
+    The list of fonts is a priority list. The first one is used first; if not, the second one is used; etc.
+  */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  line-height: 1.6;
+  color: var(--text);
+
+  /*
+    https://www.w3schools.com/CSSref/func_linear-gradient.php
+    The above line sets the background to a gradient with
+      colors from --bg (white) to --offwhite going from top to bottom (180deg).
+  */
+  background: linear-gradient(180deg, var(--bg), var(--offwhite));
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  /*
+    https://www.w3schools.com/cssref/css_units.php
+    rem = em relative to font size of root element
+  */
+  width: min(100% - 2rem, 960px);
+
+  /*
+    https://www.w3schools.com/CSSref/css_pr_margin-inline.php
+    margin-inline specifies the margin at the start and end in the inline direction.
+    Essentially, margin-inline changes margin depending on the "direction" elements are being placed on.
+  */
+  margin-inline: auto;
+}
+
+.site-header {
+  background: var(--brand);
+  color: var(--brand-contrast);
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.brand {
+  /*
+    https://www.w3schools.com/cssref/css_units.php
+    vw = relative to 1% of the width of the viewport (or the browser window size)
+  */
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  margin: 0;
+  padding: 1rem 0 .25rem 0;
+}
+
+.brand a {
+  color: var(--brand-contrast);
+  text-decoration: none;
+}
+
+.brand .dim {
+  opacity: .8;
+  font-weight: 500;
+}
+
+.site-nav {
+  display: flex;
+
+  /*
+    https://www.w3schools.com/cssref/css3_pr_gap.php
+    gap defines gap between rows/columns in flexbox
+  */
+  gap: .75rem;
+  padding: .5rem 0 1rem 0;
+}
+
+.nav-link {
+  color: var(--brand-contrast);
+  text-decoration: none;
+  padding: .4rem .75rem;
+  border-radius: .75rem;
+  border: 1px solid transparent;
+
+  /*
+    explain transitions
+  */
+  transition: background-color .2s ease, border-color .2s ease, transform .08s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,.12);
+}
+
+/*
+  transform
+*/
+.nav-link:active {
+  transform: translateY(1px);
+}
+
+.nav-link:focus-visible {
+  /*
+    explain outline + solid keyword
+  */
+  outline: 2px solid var(--offwhite);
+  outline-offset: 2px;
+}
+
+/* 
+  main container + padding-block;
+*/
+main.container {
+  flex: 1 0 auto;
+  padding-block: 2rem;
+}
+
+.hero {
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+
+.lede {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+.actions {
+  display: flex;
+  gap: .75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: .6rem 1rem;
+  border-radius: .75rem;
+  background: var(--brand);
+  color: var(--brand-contrast);
+  border: 1px solid var(--brand);
+  font-weight: 600;
+  /*
+    transition
+  */
+  transition: filter .15s ease, transform .08s ease;
+}
+.button:hover {
+  /*
+    filter + brightness
+  */
+  filter: brightness(1.05);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button.outline {
+  background: transparent;
+  color: var(--brand);
+  border-color: var(--brand);
+}
+.button.outline:hover {
+  /*
+    color-mix, in keyword, srgb keyword
+  */
+  background: color-mix(in srgb, var(--brand) 10%, transparent);
+}
+
+.card {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--white);
+  box-shadow: 0 1px 0 rgba(0,0,0,.03);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: .5rem;
+  color: var(--brand);
+  text-decoration: none;
+  border-bottom: 1px solid var(--silver);
+  padding-bottom: .1rem;
+}
+.cta:hover {
+  border-color: var(--brand);
+}
+
+.site-footer {
+  background: var(--brand);
+  color: var(--brand-contrast);
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255,255,255,.15);
+}
+
+.site-footer a {
+  color: var(--brand-contrast);
+}
+
+/*
+  focus-visible
+*/
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/*
+  @media
+*/
+@media (max-width: 480px) {
+  .brand .dim {
+    display: none;
+  }
+}
+
+/*
+  object-fit
+*/
+.site-header .site-favicon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.site-header .site-favicon:hover {
+  transform: scale(1.05);
+}
