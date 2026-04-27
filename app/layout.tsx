@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Steven Luo's Personal Website",
-  description: "A place to put myself",
+  title: "Steven Luo - Personal Website",
+  description: "Steven Luo's personal website.",
+  icons: {
+    icon: "/resources/favicon.png",
+  },
 };
 
 export default function RootLayout({
