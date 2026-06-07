@@ -1,5 +1,7 @@
+
 import Image from "next/image";
-import Header from "../../components/header/header";
+import Header from "@/app/components/header/header";
+import Footer from "@/app/components/footer/footer";
 
 export default function BlenderGallery() {
   return (
@@ -50,12 +52,7 @@ export default function BlenderGallery() {
           </figure>
         </section>
       </main>
-
-      <footer className="site-footer">
-        <div className="container">
-          <p>© 2025 Steven Luo. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

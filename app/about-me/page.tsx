@@ -1,4 +1,6 @@
-import Header from "../components/header/header";
+
+import Header from "@/app/components/header/header";
+import Footer from "@/app/components/footer/footer";
 
 export default function AboutMe() {
   return (
@@ -45,12 +47,7 @@ export default function AboutMe() {
           </ul>
         </section>
       </main>
-
-      <footer className="site-footer">
-        <div className="container">
-          <p>© 2025 Steven Luo. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
