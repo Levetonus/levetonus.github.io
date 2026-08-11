@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --white: #ffffff;
@@ -20,11 +20,13 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-theme-purple: #7D3C98;
+  --color-theme-purple: #7d3c98;
   --color-theme-gray: var(--color-gray-300);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -38,7 +40,13 @@ body {
   margin: 0;
   background: linear-gradient(180deg, var(--bg), var(--offwhite));
   color: var(--text);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
     sans-serif;
   line-height: 1.6;
 }
@@ -116,7 +124,9 @@ img {
   padding: 0.4rem 0.75rem;
   border: 1px solid transparent;
   border-radius: 8px;
-  transition: background-color 0.2s ease, border-color 0.2s ease,
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
     transform 0.08s ease;
 }
 
@@ -177,7 +187,9 @@ main.container {
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  transition: filter 0.15s ease, transform 0.08s ease;
+  transition:
+    filter 0.15s ease,
+    transform 0.08s ease;
 }
 
 .button:hover {

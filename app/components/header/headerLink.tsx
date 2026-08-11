@@ -1,5 +1,4 @@
-
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function HeaderLink({
   href,
@@ -9,10 +8,7 @@ export default function HeaderLink({
   text: string;
 }) {
   return (
-    <Link
-      href={href}
-      className="nav-link"
-    >
+    <Link href={href} className='nav-link'>
       {text}
     </Link>
   );
