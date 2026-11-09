@@ -1,0 +1,16 @@
+name: Setup Node.js
+description: Set up Node.js, cache npm downloads, and install dependencies
+
+runs:
+  using: composite
+  steps:
+    - name: Set up Node.js
+      uses: actions/setup-node@v7
+      with:
+        node-version: 24
+        cache: npm
+        cache-dependency-path: package-lock.json
+
+    - name: Install dependencies
+      shell: bash
+      run: npm ci

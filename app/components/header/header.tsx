@@ -7,9 +7,7 @@ export default function Header() {
     <header className='site-header'>
       <div className='container'>
         <h1 className='brand'>
-          <Link href='/'>
-            Steven Luo<span className='dim'> - Personal Website</span>
-          </Link>
+          <Link href='/'>Steven Luo - Personal Website</Link>
         </h1>
         <nav className='site-nav' aria-label='Primary'>
           <HeaderLink href='/about-me' text='About Me' />
