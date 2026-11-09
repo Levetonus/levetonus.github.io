@@ -12,6 +12,7 @@ export default function Header() {
         <nav className='site-nav' aria-label='Primary'>
           <HeaderLink href='/about-me' text='About Me' />
           <HeaderLink href='/projects/blender' text='Blender Gallery' />
+          <HeaderLink href='/#blog' text='Blog' />
         </nav>
         <Image
           src='/resources/favicon.png'

@@ -10,8 +10,8 @@ export default function AboutMe() {
           <h2>About Me</h2>
           <p className='lede'>
             Hello! I&apos;m Steven Luo, an undergraduate at Rensselaer
-            Polytechnic Institute studying Information Technology &amp; Web
-            Science and Computer Science (Class of 2029).
+            Polytechnic Institute studying Computer Science and Mathematics,
+            expected to graduate in Spring 2029.
           </p>
         </section>
 
@@ -23,10 +23,6 @@ export default function AboutMe() {
             <li>Swimming recreationally</li>
             <li>Exploring new places on foot</li>
           </ul>
-          <p className='muted'>
-            I may dedicate pages on my website to Blender and photography - I
-            love crafting and capturing pretty scenes.
-          </p>
         </section>
 
         <section className='card'>

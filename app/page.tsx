@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/app/components/header/header';
 import Footer from '@/app/components/footer/footer';
+import Blog from '@/app/components/blog/blog';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
             </Link>
           </div>
         </section>
+        <Blog />
       </main>
       <Footer />
     </>
